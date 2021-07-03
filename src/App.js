@@ -15,6 +15,8 @@ import ViewComfyIcon from '@material-ui/icons/ViewComfy';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import IconButton from '@material-ui/core/IconButton';
+import {HashLink as Link } from 'react-router-hash-link';
+import Main from './components/Main';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,6 +28,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Grid = styled.section`
+  max-width: 70rem;
+  margin: 1rem auto;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+`;
+
+const List = styled.section`
   max-width: 70rem;
   margin: 1rem auto;
   display: inline;
@@ -91,25 +102,39 @@ function App() {
         }
       >
 
-        <Grid>
+      {/* <div align= "center" style={{margin:'2rem'}} >
 
-        {/* <div align= "center" style={{margin:'2rem'}} >
-
+      <IconButton className={classes.menuButton} color="inherit" aria-label="menu">
+          <Link smooth align= "center" to="#listView">
+                        <ViewListIcon/>
+                        </Link>
+        </IconButton>
         <IconButton className={classes.menuButton} color="inherit" aria-label="menu">
-            <ViewListIcon onClick={list}/>
-          </IconButton>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="menu">
-            <ViewComfyIcon onClick={grid}/>
-          </IconButton>
-        </div> */}
+          <Link smooth align= "center" to="#gridView">
+                          <ViewComfyIcon/>
+          </Link>
+        </IconButton>
+      </div> */}
+        {/* <Main/> */}
+        <List>
+
           {images.map(image=>(
         
         <ImageList url={image.urls.regular} key={image.id} text= {image.alt_description}/>
-        //<ImageGrid url={image.urls.regular} key={image.id} text= {image.alt_description}/>
-          
+        
           ))}
-          
-        </Grid>
+
+        </List>
+
+        {/* <Grid id="gridView">
+
+        {images.map(image=>(
+        
+        <ImageGrid url={image.urls.regular} key={image.id} text= {image.alt_description}/>
+        
+          ))}
+
+        </Grid> */}
       </InfiniteScroll>
     </div>
   );

@@ -32,7 +32,7 @@ const ImageGrid = ({ url, key, text }) =>  {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} >
       <GridList cellHeight={160} className={classes.gridList} cols={3}>
           <GridListTile key={key} cols={5}>
             
