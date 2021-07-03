@@ -1,0 +1,22 @@
+[debug] [2021-07-03T05:56:10.053Z] ----------------------------------------------------------------------
+[debug] [2021-07-03T05:56:10.059Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kaush\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-07-03T05:56:10.060Z] CLI Version:   9.14.0
+[debug] [2021-07-03T05:56:10.060Z] Platform:      win32
+[debug] [2021-07-03T05:56:10.060Z] Node Version:  v12.18.2
+[debug] [2021-07-03T05:56:10.110Z] Time:          Sat Jul 03 2021 11:26:10 GMT+0530 (India Standard Time)
+[debug] [2021-07-03T05:56:10.111Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-03T05:56:10.126Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-03T05:56:10.184Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-03T05:56:10.186Z] > authorizing via signed-in user (kaushik1prayaga@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  K:\Projects\react-unsplash
+
