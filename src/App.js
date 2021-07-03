@@ -108,6 +108,7 @@ function App() {
         //<ImageGrid url={image.urls.regular} key={image.id} text= {image.alt_description}/>
           
           ))}
+          
         </Grid>
       </InfiniteScroll>
     </div>
